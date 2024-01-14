@@ -4,16 +4,25 @@ body {
 }
 
 .main-frame {
+    padding-top: 100px;
     position: relative;
     display: flex;
+    justify-content: center;
     height: 100vh;
+}
+
+.train-frame {
+    position: relative;
+    width: 200px;
+    height: 200px;
 }
 
 .body1 {
     position: absolute;
     width: 86px;
     height: 21px;
-    top: -0%;
+    top: -10.3%;
+    left: 50%;
     clip-path: polygon(0% 0%, 82% 0%, 100% 100%, 0% 100%);
     background: linear-gradient(90.08deg, #9FCE8A 0.09%, #BBDBAC 99.95%);
 }
@@ -23,6 +32,7 @@ body {
     width: 86px;
     height: 21px;
     top: -0%;
+    left: 50%;
     clip-path: polygon(0% 0%, 100% 0%, 82% 100%, 0% 100%);
     background: linear-gradient(90deg, #7EA966 8.52%, #A9C79C 100%);
 }
@@ -31,8 +41,8 @@ body {
     position: absolute;
     width: 66px;
     height: 27px;
-    left: 18.4%;
-    top: 36.5%;
+    left: 52.5%;
+    top: 10.4%;
     background: linear-gradient(180deg, #A98D6D 0%, rgba(255, 255, 255, 0) 69.35%), linear-gradient(180deg, #FFFFFF 48.39%, #A68A69 100%);
 }
 
@@ -40,17 +50,17 @@ body {
     position: absolute;
     width: 8px;
     height: 60px;
-    left: 7.1%;
-    top: 3.5%;
+    left: 30.5%;
+    top: -29%;
     background: #EBB241;
 }
 
 .bigWheel {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 6%;
-    top: 13.5%;
+    width: 70px;
+    height: 70px;
+    left: 23%;
+    top: -2%;
     border-radius: 50%;
     background: #6A4F37;
 }
@@ -60,7 +70,7 @@ body {
     width: 75%;
     height: 75%;
     left: 12.5%;
-    top: 12.5%;
+    top: 13%;
     border-radius: 50%;
     background: #E1D0A5;
 }
@@ -69,7 +79,7 @@ body {
     position: absolute;
     width: 25%;
     height: 25%;
-    left: 41.5%;
+    left: 39.5%;
     top: 41%;
     border-radius: 50%;
     background: #BA3936;
@@ -77,10 +87,10 @@ body {
 
 .smallWheel {
     position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 5.7%;
-    top: -29.5%;
+    width: 45px;
+    height: 45px;
+    left: 69%;
+    top: 10.3%;
     border-radius: 50%;
     background: #6C5039;
 }
@@ -110,8 +120,8 @@ body {
     position: absolute;
     width: 8px;
     height: 35px;
-    left: 11%;
-    top: 3.3%;
+    left: 54%;
+    top: -27.8%;
     background: #EBB241;
 }
 
@@ -119,8 +129,8 @@ body {
     position: absolute;
     width: 85px;
     height: 14px;
-    left: 6.3%;
-    top: 1%;
+    left: 25%;
+    top: -35%;
     clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
     background: #D98F34;
 }
@@ -129,43 +139,38 @@ body {
     position: absolute;
     width: 16px;
     height: 49px;
-    left: 14%;
-    top: 0.6%;
-
+    left: 74%;
+    top: -35%;
     background: linear-gradient(90deg, rgba(253, 247, 239, 0.2) 0%, rgba(216, 140, 49, 0.2) 100%), linear-gradient(90deg, #D99033 50%, rgba(217, 144, 51, 0) 71.88%);
 }
 
-
 .elipse1 {
-    /*position: absolute;*/
+    position: absolute;
     width: 14px;
     height: 14px;
-    left: 134px;
-    top: 37px;
+    left: 74%;
+    top: -43%;
     border-radius: 50%;
-
     background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #71AEDF 100%);
 }
 
 .elipse2 {
-    /*position: absolute;*/
+    position: absolute;
     width: 16px;
     height: 16px;
-    left: 134px;
-    top: 14px;
+    left: 74%;
+    top: -55%;
     border-radius: 50%;
-
     background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #70ADDE 100%);
 }
 
 .elipse3 {
-    /*position: absolute;*/
+    position: absolute;
     width: 16px;
     height: 16px;
-    left: 155px;
-    top: 4px;
+    left: 80%;
+    top: -65%;
     border-radius: 50%;
-
     background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #81B7E3 100%);
 }
 
@@ -173,8 +178,8 @@ body {
     position: absolute;
     width: 24px;
     height: 26px;
-    left: 8%;
-    top: 7.4%;
+    left: 34.5%;
+    top: -18.2%;
     transform: rotate(0deg);
     background: transparent;
     border: 7px solid #C64A2E;
