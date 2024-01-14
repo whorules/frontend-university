@@ -1,0 +1,64 @@
+.big-triangle {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid darkgreen;
+}
+
+.medium-triangle {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid limegreen;
+}
+
+.small-triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid greenyellow;
+}
+
+.tree-rectangle {
+    width: 20px;
+    height: 50px;
+    background-color: brown;
+}
+
+#draggableArea {
+    position: relative;
+}
+
+.dragging {
+    position: relative;
+}
+
+.house-body {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+}
+
+.house-roof {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 80px solid sandybrown;
+}
+.house-roof::after {
+    display: block;
+    content: '';
+    position: relative;
+    z-index: -1;
+    left: -90px;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-left: 90px solid transparent;
+    border-right: 89px solid transparent;
+    border-bottom: 89px solid darkred;
+}

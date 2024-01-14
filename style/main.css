@@ -1,0 +1,225 @@
+.schoolName {
+    color: black;
+    font-size: 48px;
+    font-family: Rozha One, serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.title {
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.subtitle {
+    color: black;
+    background-color: transparent;
+    border: none;
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word
+}
+
+.mainText {
+    color: #280F7E;
+    font-size: 36px;
+    width: 700px;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+#signup-container {
+    display: flex;
+    align-items: center;
+}
+
+#signup-container button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Arial, serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    word-wrap: break-word;
+    background: transparent url("../static/main/sign-up-button.svg");
+}
+
+body {
+    background: linear-gradient(109deg, #FFB6EF 0%, #E7B0FF 6%, #D6A3FE 9%, #CA9BFC 12%, #BD91FB 18%, #A781F7 24%, #7A5FF0 37%, #00BDF6 51%, #00E2E9 56%, #00EDD5 61%, #00E4B3 66%, rgba(175.39, 173.71, 128.89, 0.99) 72%, #FF7439 80%, #F66E3F 85%, #EF490F 90%, #F1310C 91%, #E83023 94%) no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: Inter, serif;
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    padding-top: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+#logo {
+    width: 250px;
+    display: flex;
+    text-decoration: none;
+}
+
+#logo img {
+    display: flex;
+    margin-left: -82px;
+    align-items: center;
+}
+
+#content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#main-menu {
+    display: flex;
+    align-items: center;
+}
+
+#main-menu a {
+    display: inline-block;
+    margin-right: 42px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: Inter, serif;
+}
+
+.top-content {
+    position: relative;
+}
+
+.learn-more-container {
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.learn-more {
+    width: 200px;
+    height: 50px;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, serif;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
+    word-wrap: break-word;
+    background: transparent url("../static/main/sign-up-button.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.woman {
+    position: absolute;
+    width: 650px;
+    top: -50px;
+    right: -50px;
+}
+
+#advantages {
+    margin-top: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../static/main/varnish.svg");
+    background-size: 750px 1042px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 150px;
+}
+
+.advantages-content {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+}
+
+.section {
+    width: 570px;
+    box-sizing: border-box;
+    padding: 40px;
+    height: 300px;
+    font-family: Inter, serif;
+    margin-bottom: 55px;
+    background: linear-gradient(180deg, rgba(236.22, 236.22, 236.22, 0.3) 0%, rgba(255, 255, 255, 0.6) 92%);
+    border: none;
+}
+
+.section p {
+    width: 85%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.section h3 {
+    margin: 0;
+    padding-bottom: 25px;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-family: Inter, serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.advantages-title {
+    color: black;
+    border: none;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+.rectangle {
+    position: relative;
+    background: linear-gradient(180deg, rgba(236.22, 236.22, 236.22, 0.56) 0%, rgba(255, 255, 255, 0.79) 91%)
+}
+
+.rectangle-text {
+    color: black;
+    font-size: 24px;
+    font-family: Inter, serif;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* Your styles for smaller screens */
+}

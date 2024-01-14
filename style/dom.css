@@ -1,0 +1,42 @@
+body {
+    height: 100vh;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.main-row {
+    padding: 5px;
+    background: #5d9ad0;
+    width: 190px;
+}
+
+.table-button {
+    font-size: 15px;
+    background-color: #5d9ad0;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0 10px 550px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main-table {
+    display: flex;
+    justify-content: center;
+}
+
+.content-row {
+    padding: 10px;
+    text-align: center;
+}
+
+.class1 {
+    background-color: #bbd8ee;
+}
+
+.class2 {
+    background-color: #dbecf7;
+}

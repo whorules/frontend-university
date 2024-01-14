@@ -1,0 +1,124 @@
+main {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.main-block {
+    position: relative;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.carWashing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.movingCar {
+    position: relative;
+    top: 130px;
+    left: 70px;
+    width: 70%;
+    height: auto;
+    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.mouseOnText {
+    position: absolute;
+    bottom: 285px;
+    left: 55%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: red;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.main-block:not(:hover) .movingCar {
+    opacity: 0;
+    transform: translate(-90%, 90%);
+}
+
+.main-block:hover .mouseOnText {
+    opacity: 1;
+}
+
+.onClickText {
+    position: absolute;
+    bottom: 285px;
+    left: 0;
+    transform: rotate(-37deg);
+    font-size: 30px;
+    color: dodgerblue;
+    opacity: 0;
+    white-space: nowrap;
+}
+
+.main-block .image-container .flexingCar {
+    animation-name: opacityAnimation, rotateAnimation, resizeAnimation;
+    animation-duration: 3s, 0.5s, 0.2s;
+    animation-iteration-count: 1, 10, infinite;
+    animation-direction: normal, alternate-reverse, alternate-reverse;
+    animation-delay: 0s, 0s, 3s;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.main-block:active .flexingCar {
+    display: block;
+    opacity: 1;
+    top: 30%;
+    left: 20%;
+    transition: none;
+}
+
+.main-block:active .onClickText {
+    opacity: 1;
+}
+
+.main-block:active .mouseOnText {
+    opacity: 0;
+}
+
+.main-block:active .image-container .movingCar {
+    top: 20%;
+    left: 20%;
+    display: none;
+}
+
+@keyframes opacityAnimation {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes rotateAnimation {
+    0%, 100% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+}
+
+@keyframes resizeAnimation {
+    from {
+        transform: scale(0.8)
+    }
+    to {
+        transform: scale(1.1)
+    }
+}
