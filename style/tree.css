@@ -1,9 +1,3 @@
-#my-content {
-    padding-top: 100px;
-    /*position: relative;*/
-    height: 100vh;
-}
-
 #draggable-roof {
     left: 50%;
     top: 20%;
@@ -48,10 +42,19 @@
 
 .example-draggable {
     position: absolute;
+
 }
 
-#draggable_main {
+#draggable-main {
     position: relative;
     border: 5px solid darkblue;
-    height: 500px;
+    width: 600px;
+    height: 600px;
+}
+
+#main-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
 }
