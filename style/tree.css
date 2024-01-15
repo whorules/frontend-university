@@ -1,0 +1,57 @@
+#my-content {
+    padding-top: 100px;
+    /*position: relative;*/
+    height: 100vh;
+}
+
+#draggable-roof {
+    left: 50%;
+    top: 20%;
+    rotate: 45deg;
+}
+
+#draggable-house-body {
+    left: 50%;
+    top: 50%;
+    rotate: 45deg;
+}
+
+#draggable-window {
+    left: 5%;
+    top: 50%;
+    rotate: 90deg;
+}
+
+#draggable-big-tree {
+    left: 50%;
+    top: 80%;
+    rotate: 180deg;
+}
+
+#draggable-medium-tree {
+    left: 80%;
+    top: 40%;
+    rotate: 270deg;
+}
+
+#draggable-small-tree {
+    left: 10%;
+    top: 40%;
+    rotate: 90deg;
+}
+
+#draggable-tree-trunk {
+    left: 90%;
+    top: 90%;
+    rotate: 270deg;
+}
+
+.example-draggable {
+    position: absolute;
+}
+
+#draggable_main {
+    position: relative;
+    border: 5px solid darkblue;
+    height: 500px;
+}
