@@ -193,20 +193,19 @@ function checkItOut() {
 let animInterval = null;
 
 function myMove(elem) {
-    let elemPos = elem.getBoundingClientRect();
-    let shifter = 0;
     let housePos = houseBody.getBoundingClientRect();
     clearInterval(animInterval);
-    animInterval = setInterval(frame, 2);
-
+    animInterval = setInterval(frame, 50);
+    let iterationsCount = 0;
     function frame() {
         if (Math.abs(Number(elem.style.top.replace("px", '')) - housePos.top) < 1) {
             clearInterval(animInterval);
-        } else {
-            console.log(elem.style.left, elemPos.left)
-            shifter++;
-            elem.style.top = elemPos.top + shifter + 'px';
-            elem.style.left += shifter + 'px';
+        } else if (iterationsCount < 60) {
+            iterationsCount++;
+            let topPosition = Math.abs(Number(elem.style.top.replace("px", '')));
+            let leftPosition = Math.abs(Number(elem.style.left.replace("px", '')));
+            elem.style.top = (topPosition + 1) + 'px'
+            elem.style.left = (leftPosition + 1) + 'px';
         }
     }
 }
