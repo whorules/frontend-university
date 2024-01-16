@@ -54,8 +54,8 @@
 }
 
 body {
-    background: linear-gradient(109deg, #FFB6EF 0%, #E7B0FF 6%, #D6A3FE 9%, #CA9BFC 12%, #BD91FB 18%, #A781F7 24%, #7A5FF0 37%, #00BDF6 51%, #00E2E9 56%, #00EDD5 61%, #00E4B3 66%, rgba(175.39, 173.71, 128.89, 0.99) 72%, #FF7439 80%, #F66E3F 85%, #EF490F 90%, #F1310C 91%, #E83023 94%) no-repeat;
     background-size: cover;
+    background: linear-gradient(109deg, #FFB6EF 0%, #E7B0FF 6%, #D6A3FE 9%, #CA9BFC 12%, #BD91FB 18%, #A781F7 24%, #7A5FF0 37%, #00BDF6 51%, #00E2E9 56%, #00EDD5 61%, #00E4B3 66%, rgba(175.39, 173.71, 128.89, 0.99) 72%, #FF7439 80%, #F66E3F 85%, #EF490F 90%, #F1310C 91%, #E83023 94%) no-repeat fixed;
     width: 100%;
     font-family: Inter, serif;
     height: 100%;
@@ -219,7 +219,25 @@ a:active {
     word-wrap: break-word
 }
 
+@media only screen and (max-width: 1400px) {
+    #logo {
+        padding-left: 30px;
+        transform: scale(0.8);
+    }
 
-@media screen and (max-width: 1200px) {
-    /* Your styles for smaller screens */
+    #logo img {
+        transform: scale(0.8);
+    }
+
+    body {
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .advantages-content {
+        display: contents;
+    }
+
 }
