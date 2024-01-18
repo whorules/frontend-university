@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style/course.css">
+    <title>Таблица результатов</title>
+</head>
+<body id="gameOver-screen">
+    <h1 class="title">ИГРА ОКОНЧЕНА</h1>
+    <h2 class="subtitle">Ваш счёт: <span id="displayScore"></span></h2>
+    <div id="leaderboardContainer">
+        <table>
+            <thead id="tbl-header">
+                <tr>
+                    <th>Позиция</th>
+                    <th>Имя</th>
+                    <th>Счёт</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard">
+                <!-- Scores will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <button id="btn-playAgain">Играть заново</button>
+    <script src="../../scripts/course/leaderboard.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+html {
+  line-height: 1.2;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+html,
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* Welcome page */
+#welcome {
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 4rem;
+  width: 100%;
+  height: 100vh;
+  background-size: 200% 200%;
+  background-image: linear-gradient(
+    -45deg,
+    rgb(92, 64, 234) 0%,
+    rgb(120, 98, 232) 25%,
+    rgb(246, 197, 255) 51%,
+    rgb(241, 127, 140) 100%
+  );
+  -webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;
+}
+
+.title {
+  font-size: 100px;
+  color: white;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+#nameForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  color: white;
+  margin-top: 4rem;
+}
+
+input {
+  border: none;
+  border-radius: 1rem;
+  height: 2rem;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: white;
+}
+
+#difficultyOptions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#purple-btn{
+  background-color: #a285df;
+}
+
+#purple-btn:hover{
+  background-color: #855ed9;
+}
+
+/* main game styles */
+
+#game-screen {
+  background-attachment: fixed;
+  padding-bottom: 4rem;
+  width: 100%;
+  height: 100vh;
+  background-size: 200% 200%;
+  background-image: linear-gradient(
+    -45deg,
+    rgb(156, 255, 143) 0%,
+    rgb(32, 204, 112) 25%,
+    rgb(0, 238, 226) 51%,
+    #217eff 100%
+  );
+  -webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;
+}
+
+#mainGame {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+}
+
+#timerSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+#timer-bar {
+  width: 80%;
+  height: 30px;
+  background-color: #ddd;
+  position: relative;
+}
+
+#timer {
+  font-size: 2rem;
+  color: white;
+}
+
+#progress-bar {
+  height: 100%;
+  background-color: #42d147;
+}
+
+#itemContainer {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 6rem;
+}
+
+.item {
+  height: 100px;
+  width: 100px;
+  color: azure;
+  background-color: rgb(77, 183, 236);
+  font-size: 50px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  border-radius: 1rem;
+}
+
+.item:hover {
+  background-color: rgb(50, 137, 200);
+}
+
+.completed {
+  background-color: #0e8ec5;
+}
+
+.completed:hover {
+  background-color: #0e8ec5;
+}
+.wrong {
+  animation-name: wrong;
+  animation-duration: 0.2s;
+  animation-iteration-count: 1;
+}
+
+.item.selected {
+  border-style: solid;
+  border-color: aquamarine;
+  border-width: 4px;
+}
+
+#score-end {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* game over screen */
+
+#gameOver-screen {
+  background-attachment: fixed;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4rem;
+  width: 100%;
+  height: 100vh;
+  background-size: 200% 200%;
+  background-image: linear-gradient(
+    -45deg,
+    rgb(210, 54, 54) 0%,
+    rgb(221, 89, 41) 25%,
+    rgb(238, 152, 115) 51%,
+    rgb(238, 176, 115) 100%
+  );
+  -webkit-animation: AnimateBG 20s ease infinite;
+  animation: AnimateBG 20s ease infinite;
+}
+
+#leaderboardContainer {
+  width: 80%;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 4rem;
+}
+#tbl-header {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#leaderboard {
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+th {
+  padding: 20px 15px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+button {
+  width: 14rem;
+  color: white;
+  background-color: rgb(77, 183, 236);
+  border: none;
+  border-radius: 2rem;
+  font-size: 2rem;
+  height: 4rem;
+  padding: 1rem;
+}
+
+button:hover {
+  background-color: rgb(50, 137, 200);
+}
+
+#btn-playAgain {
+  width: 16rem;
+  color: white;
+  background-color: rgb(219, 84, 43);
+  border: none;
+  border-radius: 2rem;
+  font-size: 2rem;
+  height: 4rem;
+}
+
+#btn-playAgain:hover {
+  background-color: rgb(228, 121, 88);
+}
+
+@keyframes wrong {
+  from {
+    background-color: rgb(60, 136, 139);
+  }
+  to {
+    background-color: rgb(255, 102, 168);
+  }
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
